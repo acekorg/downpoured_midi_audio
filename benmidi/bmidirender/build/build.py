@@ -72,7 +72,7 @@ RT_MANIFEST = 24
 #   otherwise a default icon is used
 # dest_base will be the exe filename
 test_wx = Target(
-	description = "Pythonpixels",
+	description = "Bmidi to Wave",
 	script = filename,
 	other_resources = [(RT_MANIFEST, 1, manifest_template % dict(prog=distribution))],
 	dest_base = distribution)
@@ -88,11 +88,22 @@ setup(
 	windows = [test_wx],
 	
 	py_modules=[
-		'scoreview\\__init__',
-		'scoreview\\scoreview',
-		'scoreview\\scoreview_util',
-		'scoreview\\listview',
-		'scoreview\\drawmidis',
+		#~ 'bmidilib\\__init__',
+		#~ 'bmidilib\\bbuilder',
+		#~ 'bmidilib\\bmidiconstants',
+		#~ 'bmidilib\\bmidilib',
+		#~ 'bmidilib\\bmidiplay',
+		#~ 'bmidilib\\bmiditools',
+		#~ 'bmidilib\\midiutil',
+		
+		#~ 'scoreview\\__init__',
+		#~ 'scoreview\\scoreview',
+		#~ 'scoreview\\scoreview_util',
+		#~ 'scoreview\\listview',
+		#~ 'scoreview\\drawmidis',
+		
+		#~ 'soundfontpreview\\__init__',
+		#~ 'soundfontpreview\\pysf',
 
 		 'midirender_audiooptions',
 		 'midirender_choose_midi_voice',
